@@ -31,6 +31,22 @@ As simple as that
 
 Lets start!
 
+## VPN Server
+
+Download this OpenVPN Script
+
+`https://github.com/maismuka/OpenVPN-PiHole/blob/master/openvpn-install.sh`
+
+`chmod 777 openvpn-install.sh`
+
+Then run it
+
+`./openvpn-install.sh`
+
+Then continue to set the setting default installation.
+
+In the end, the script will ask for the `client`. This indicate you have successfully install OpenVPN on your server
+
 ## PiHole Server
 
 Based on `https://github.com/pi-hole/pi-hole`, I just simply download the script provided and run it
@@ -38,6 +54,16 @@ Based on `https://github.com/pi-hole/pi-hole`, I just simply download the script
 ```
 wget -O basic-install.sh https://install.pi-hole.net
 sudo bash basic-install.sh
+```
+
+There's also nothing much, set all to default, but when prompted with `select DNS server`, you must select `custom`
+
+Then proceed to put into your PiHole server IP, left next optional DNS as empty
+
+After prompted the DNS like this;
+
+```
+167.71.208.111, 
 ```
 
 The simple configuration is set all as default!
@@ -68,34 +94,6 @@ root@maismukapi:~# ip a s
 ```
 
 My PiHole server IP is `167.71.208.111`
-
-
-## VPN Server
-
-Download this OpenVPN Script
-
-`https://github.com/maismuka/OpenVPN-PiHole/blob/master/openvpn-install.sh`
-
-`chmod 777 openvpn-install.sh`
-
-Then run it
-
-`./openvpn-install.sh`
-
-There's also nothing much, set all to default, but when prompted with `select DNS server`, you must select `custom`
-
-Then proceed to put into your PiHole server IP, left next optional DNS as empty
-
-After prompted the DNS like this;
-
-```
-167.71.208.111 , 
-```
-
-Then continue to set the setting default installation.
-
-In the end, the script will ask for the `client`. This indicate you have successfully install OpenVPN on your server
-
 
 ## Creating VPN Client
 
