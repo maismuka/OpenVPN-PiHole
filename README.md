@@ -33,9 +33,11 @@ Lets start!
 
 ## VPN Server
 
-Download this OpenVPN Script
+Clone this git
 
-`https://github.com/maismuka/OpenVPN-PiHole/blob/master/openvpn-install.sh`
+`git clone https://github.com/maismuka/OpenVPN-PiHole.git`
+
+Go into the folder and change the file permission
 
 `chmod 777 openvpn-install.sh`
 
